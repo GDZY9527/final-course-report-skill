@@ -10,6 +10,7 @@ $required = @(
     '.gitignore',
     'skills/final-course-report/SKILL.md',
     'references/report_workflow.md',
+    'references/smart_defaults.md',
     'references/project_contract.md',
     'references/frontend_quality.md',
     'references/visual_rules.md',

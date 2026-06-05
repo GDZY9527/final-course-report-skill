@@ -13,6 +13,7 @@ Use this guide when the user asks for a final course report, course summary repo
 - If network, API access, model downloads, browser screenshots, compilers, or dependencies are unavailable, provide a runnable offline fallback when possible, update requirements and environment notes, and record the limitation in the report and delivery notes.
 - The user creates conda environments and installs dependencies manually. Write `requirements.txt` and tell the user what to install; do not assume dependencies are already present.
 - Ask for cover-page fields before final report generation: name, student ID, class, teacher, course, template path, and conda Python path. Treat project direction and target course directory as optional overrides: infer a suitable project from the course when omitted, and propose/create a course directory from the course name under the current workspace or user-approved base directory when omitted.
+- Prefer useful inference over asking. Ask only for facts that are required, cannot be discovered locally, and would be risky to assume.
 - Default to UTF-8 for Chinese Markdown, JSON, CSV, and text files.
 
 ## Required Workflow
@@ -38,6 +39,7 @@ Read only the files needed for the task:
 - `references/delivery_quality.md` for quality gates and packaging.
 - `references/originality_and_sources.md` for personal writing, anti-generic prose, and references.
 - `references/course_patterns.md` for lessons from the existing C++, LLM app, and NLP reports.
+- `references/smart_defaults.md` for minimal prompts, course-type heuristics, and automatic project/directory selection.
 - `references/portability.md` for cross-machine and cross-agent conventions.
 
 ## Output Expectations

@@ -27,17 +27,19 @@ Before final report generation, collect or infer:
 
 1. Inspect the course directory, template document, existing project files, and user constraints.
 2. Plan the project and report structure using `../../references/report_workflow.md`.
-3. Build or update the project according to `../../references/project_contract.md`.
-4. For software and software-hardware projects, implement frontend requirements from `../../references/frontend_quality.md`.
-5. Handle conda and dependency rules from `../../references/environment.md`.
-6. Generate academic-style and deterministic figures using `../../references/visual_rules.md`.
-7. Write the report using real project outputs, originality rules, and references from `../../references/originality_and_sources.md`.
-8. Apply strict delivery gates and packaging rules from `../../references/delivery_quality.md`.
-9. If moving between machines or agents, follow `../../references/portability.md`.
+3. Infer missing project and directory defaults using `../../references/smart_defaults.md`.
+4. Build or update the project according to `../../references/project_contract.md`.
+5. For software and software-hardware projects, implement frontend requirements from `../../references/frontend_quality.md`.
+6. Handle conda and dependency rules from `../../references/environment.md`.
+7. Generate academic-style and deterministic figures using `../../references/visual_rules.md`.
+8. Write the report using real project outputs, originality rules, and references from `../../references/originality_and_sources.md`.
+9. Apply strict delivery gates and packaging rules from `../../references/delivery_quality.md`.
+10. If moving between machines or agents, follow `../../references/portability.md`.
 
 ## Non-Negotiable Rules
 
 - Do not fabricate project success, test results, metrics, screenshots, API usage, frontend behavior, or code snippets.
+- Prefer useful inference over asking. Ask only for facts that are required, cannot be discovered, and would be risky to assume.
 - Except for purely hardware-only courses, every new project must include complete frontend and backend or equivalent software layers.
 - Older NLP examples without a frontend are historical limitations only; new NLP projects must include frontend/backend delivery.
 - If network, API access, model downloads, compilers, browser screenshots, or dependencies are unavailable, provide a runnable offline fallback when possible and record limitations honestly.
@@ -48,6 +50,7 @@ Before final report generation, collect or infer:
 ## Reference Selection
 
 - Read `course_patterns.md` only when choosing project shapes or adapting from prior C++, LLM app, or NLP reports.
+- Read `smart_defaults.md` whenever the user gives only a course name, omits a project direction, or omits a target directory.
 - Read `visual_rules.md` whenever generating or inserting figures.
 - Read `frontend_quality.md` for every non-pure-hardware project.
 - Read `delivery_quality.md` before final checks or packaging.

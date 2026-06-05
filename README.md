@@ -22,6 +22,22 @@ Use Git as the primary maintenance channel and export stable zip releases for of
 
 ## Quick start
 
+Minimal prompt:
+
+```text
+Use this skill to generate a final course report for {course_name}.
+Template: {template_docx}
+Conda Python: {conda_python}
+Student fields: {student_name}, {student_id}, {class}, {teacher}
+```
+
+Optional additions:
+
+```text
+Project direction: ...
+Target course directory: ...
+```
+
 1. Copy or clone this repository to a target machine.
 2. Open `AGENTS.md` if using a general agent.
 3. For Codex, install or reference `skills/final-course-report`.
@@ -35,6 +51,8 @@ Use Git as the primary maintenance channel and export stable zip releases for of
    - target course directory, if the agent should not create one from the course name
 6. If the project direction is omitted, the agent should choose a deliverable project that matches the course's core concepts. If the target directory is omitted, the agent should propose or create one from the course name under the current workspace or user-approved base directory.
 7. Let the agent create the project, run checks, generate report assets, write the report, and prepare a reviewed delivery package.
+
+When project direction or target directory is omitted, the agent should infer sensible defaults instead of stopping.
 
 ## Portability placeholders
 
