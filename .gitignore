@@ -13,8 +13,8 @@
 *.key
 *.pem
 *.p12
-*api_key*
 *secret*
+credentials*
 conda-meta/
 env/
 .venv/

@@ -14,8 +14,8 @@ Use the provided Python path when running or documenting commands:
 Examples of user-provided paths:
 
 ```text
-D:\ProgramData\anaconda3\envs\cpp_oop\python.exe
-D:\ProgramData\anaconda3\envs\llm_app\python.exe
+{conda_root}\envs\{course_env}\python.exe
+{conda_python}
 ```
 
 ## Dependency Handling
