@@ -1,0 +1,63 @@
+# Private or generated report artifacts
+*.docx
+*.pdf
+*.zip
+*.7z
+*.rar
+*.pptx
+*.xlsx
+
+# Secrets and local environments
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*api_key*
+*secret*
+conda-meta/
+env/
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node/frontend
+node_modules/
+dist/
+build/
+.next/
+.vite/
+coverage/
+
+# C/C++ build outputs
+*.obj
+*.o
+*.exe
+*.dll
+*.pdb
+*.ilk
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Logs, screenshots, temporary generated results
+*.log
+tmp/
+temp/
+*.tmp
+*_old.*
+*_backup.*
+screenshots_tmp/
+rendered_pages/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

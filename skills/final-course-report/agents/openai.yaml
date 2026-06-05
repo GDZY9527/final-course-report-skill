@@ -1,0 +1,4 @@
+interface:
+  display_name: "Final Course Report"
+  short_description: "Generate complete course reports and deliverable projects."
+  default_prompt: "Use $final-course-report to generate a complete final course report with a deliverable project."
