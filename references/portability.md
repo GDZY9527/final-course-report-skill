@@ -1,5 +1,7 @@
 # Portability
 
+[English](portability.md) | [中文](portability.zh-CN.md)
+
 ## Cross-Agent Entry Points
 
 - Codex: `skills/final-course-report/SKILL.md`

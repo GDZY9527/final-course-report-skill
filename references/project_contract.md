@@ -1,5 +1,7 @@
 # Project Contract
 
+[English](project_contract.md) | [中文](project_contract.zh-CN.md)
+
 ## Required Project Quality
 
 Build projects as deliverable course software, not disposable demos.

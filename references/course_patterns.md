@@ -1,5 +1,7 @@
 # Course Patterns
 
+[English](course_patterns.md) | [中文](course_patterns.zh-CN.md)
+
 ## C++ Object-Oriented Programming
 
 Use as a later optimized example:

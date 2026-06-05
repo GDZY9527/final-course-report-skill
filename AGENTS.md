@@ -1,5 +1,7 @@
 # Final Course Report Agent Guide
 
+[English](AGENTS.md) | [中文](AGENTS.zh-CN.md)
+
 Use this guide when the user asks for a final course report, course summary report, report with a supporting practice project, Word/PDF report generation, report figures, project screenshots, or a reusable report-generation workflow.
 
 ## Operating Principles

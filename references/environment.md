@@ -1,5 +1,7 @@
 # Environment
 
+[English](environment.md) | [中文](environment.zh-CN.md)
+
 ## Conda Convention
 
 The user manually creates conda environments and installs dependencies. The agent should not silently install packages.

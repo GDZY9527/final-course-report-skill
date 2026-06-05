@@ -1,5 +1,7 @@
 # Delivery Quality
 
+[English](delivery_quality.md) | [中文](delivery_quality.zh-CN.md)
+
 ## Strict Quality Gates
 
 Before final delivery, verify:

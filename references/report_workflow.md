@@ -1,5 +1,7 @@
 # Report Workflow
 
+[English](report_workflow.md) | [中文](report_workflow.zh-CN.md)
+
 ## Purpose
 
 Use this workflow to create a complete final course report and supporting project from a course name, a project direction, a Word template, and a target environment.

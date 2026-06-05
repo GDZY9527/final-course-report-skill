@@ -1,5 +1,7 @@
 # Visual Rules
 
+[English](visual_rules.md) | [中文](visual_rules.zh-CN.md)
+
 ## Academic Technical Figure Style
 
 Every report figure must fit an academic paper or course report style. Figures must not be simplistic, decorative, or empty.

@@ -1,5 +1,7 @@
 # Final Course Report Skill
 
+[English](README.md) | [中文](README.zh-CN.md)
+
 Portable instructions for generating complete final course reports and deliverable course projects with mainstream coding agents.
 
 ## What this repository provides

@@ -1,5 +1,7 @@
 # Originality And Sources
 
+[English](originality_and_sources.md) | [中文](originality_and_sources.zh-CN.md)
+
 ## Avoid Generic AI Prose
 
 The report must sound like it comes from the real course project process.

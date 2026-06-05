@@ -1,5 +1,7 @@
 # Frontend Quality
 
+[English](frontend_quality.md) | [中文](frontend_quality.zh-CN.md)
+
 ## Mandatory Standard
 
 For every non-pure-hardware project, the software portion must include a complete, real, runnable frontend. A screenshot-only mockup, blank HTML page, or minimal form is not acceptable.
