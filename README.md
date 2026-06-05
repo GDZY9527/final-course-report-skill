@@ -25,14 +25,16 @@ Use Git as the primary maintenance channel and export stable zip releases for of
 1. Copy or clone this repository to a target machine.
 2. Open `AGENTS.md` if using a general agent.
 3. For Codex, install or reference `skills/final-course-report`.
-4. Provide the agent with:
+4. Provide the minimum required inputs:
    - course name
-   - project direction
-   - target course directory
    - Word template path
    - conda Python path
    - student and cover-page fields
-5. Let the agent create the project, run checks, generate report assets, write the report, and prepare a reviewed delivery package.
+5. Optionally provide overrides:
+   - project direction, if you already know what project you want
+   - target course directory, if the agent should not create one from the course name
+6. If the project direction is omitted, the agent should choose a deliverable project that matches the course's core concepts. If the target directory is omitted, the agent should propose or create one from the course name under the current workspace or user-approved base directory.
+7. Let the agent create the project, run checks, generate report assets, write the report, and prepare a reviewed delivery package.
 
 ## Portability placeholders
 

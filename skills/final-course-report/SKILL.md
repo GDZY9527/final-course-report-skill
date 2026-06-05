@@ -15,8 +15,9 @@ This skill is portable. The repository root also contains `AGENTS.md` for non-Co
 
 Before final report generation, collect or infer:
 
-- Course name and project direction.
-- Target course directory: `{course_dir}`.
+- Course name.
+- Optional project direction. If omitted, infer a deliverable project from the course's core concepts.
+- Optional target course directory: `{course_dir}`. If omitted, propose or create one from the course name under the current workspace or user-approved base directory.
 - Word template path: `{template_docx}`.
 - Conda Python path: `{conda_python}`.
 - Student name, student ID, class, teacher, and required output filename.

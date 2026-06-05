@@ -12,7 +12,7 @@ Use this guide when the user asks for a final course report, course summary repo
 - Never invent experiment results, screenshots, code snippets, metrics, build success, frontend behavior, or API availability.
 - If network, API access, model downloads, browser screenshots, compilers, or dependencies are unavailable, provide a runnable offline fallback when possible, update requirements and environment notes, and record the limitation in the report and delivery notes.
 - The user creates conda environments and installs dependencies manually. Write `requirements.txt` and tell the user what to install; do not assume dependencies are already present.
-- Ask for cover-page fields before final report generation: name, student ID, class, teacher, course, template path, target directory, and conda Python path.
+- Ask for cover-page fields before final report generation: name, student ID, class, teacher, course, template path, and conda Python path. Treat project direction and target course directory as optional overrides: infer a suitable project from the course when omitted, and propose/create a course directory from the course name under the current workspace or user-approved base directory when omitted.
 - Default to UTF-8 for Chinese Markdown, JSON, CSV, and text files.
 
 ## Required Workflow
