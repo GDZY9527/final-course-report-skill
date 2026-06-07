@@ -20,6 +20,24 @@ Do not hard-code the original author's machine paths in reusable files. Use:
 - `{student_name}`
 - `{student_id}`
 
+## Cross-Machine Installation
+
+Recommended paths:
+
+- Long-term sync: `git clone` the full repository.
+- Offline transfer: download and extract the full GitHub Release zip.
+
+Do not copy only `skills/final-course-report`; it normally references root-level `references/` and uses `scripts/audit_generated_report.py` for quality auditing.
+
+If the target agent requires a single-folder skill install, the installed package should include:
+
+- `SKILL.md`
+- `agents/`
+- complete `references/`
+- `scripts/audit_generated_report.py`
+
+Then verify that `SKILL.md` reference paths match the installed structure. The common fix is rewriting `../../references/` to `references/`.
+
 ## Migration Self-Check
 
 After copying or cloning to another machine, check:

@@ -54,6 +54,19 @@ Conda Python：{conda_python}
 
 如果没有提供项目方向或目标目录，智能体应自行推断合理默认值，而不是停下来等待。
 
+## 跨主机安装建议
+
+推荐用 `git clone` 克隆整个仓库，或下载 GitHub Release 中的 zip 包后完整解压。不要只复制 `skills/final-course-report` 子目录；该子目录依赖仓库根目录的 `references/`、`scripts/` 和通用入口文档。
+
+如果某个智能体只能安装单个 skill 子目录，必须同时复制：
+
+- `skills/final-course-report/SKILL.md`
+- `skills/final-course-report/agents/`
+- 仓库根目录 `references/`
+- `scripts/audit_generated_report.py`
+
+并把 `SKILL.md` 中的 `../../references/` 改为安装后实际可访问的 `references/`。安装完成后先检查 `AGENTS.zh-CN.md`、`SKILL.md`、`references/` 和审计脚本是否都能被智能体读取。
+
 ## 可迁移路径占位符
 
 不要在可复用文件中写死本机路径，统一使用：

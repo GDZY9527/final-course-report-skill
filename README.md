@@ -54,6 +54,19 @@ Target course directory: ...
 
 When project direction or target directory is omitted, the agent should infer sensible defaults instead of stopping.
 
+## Cross-Machine Installation
+
+Prefer `git clone` for the full repository, or download and extract the complete GitHub Release zip. Do not copy only `skills/final-course-report`; that subdirectory depends on root-level `references/`, `scripts/`, and generic agent entrypoint files.
+
+If an agent can only install a single skill folder, copy these together:
+
+- `skills/final-course-report/SKILL.md`
+- `skills/final-course-report/agents/`
+- root `references/`
+- `scripts/audit_generated_report.py`
+
+Then rewrite `../../references/` in `SKILL.md` to the installed path, usually `references/`. After installation, verify that the agent can read `AGENTS.md`, `SKILL.md`, `references/`, and the audit script.
+
 ## Portability placeholders
 
 Use placeholders instead of hard-coded local paths:
