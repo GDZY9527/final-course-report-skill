@@ -16,7 +16,7 @@ This skill is portable. The repository root also contains `AGENTS.md` for non-Co
 Before final report generation, collect or infer:
 
 - Course name.
-- Optional project direction. If omitted, infer a deliverable project from the course's core concepts.
+- Project direction. This is required as either a user-defined direction or an explicit statement such as "no clear project goal; agent should design a unique project." Only self-select a project when the user explicitly allows it this way.
 - Optional target course directory: `{course_dir}`. If omitted, propose or create one from the course name under the current workspace or user-approved base directory.
 - Word template path: `{template_docx}`.
 - Conda Python path: `{conda_python}`.
@@ -26,8 +26,8 @@ Before final report generation, collect or infer:
 ## Workflow
 
 1. Inspect the course directory, template document, existing project files, and user constraints.
-2. Infer missing project and directory defaults using `../../references/smart_defaults.md`.
-3. Plan a new, non-reused project using `../../references/project_uniqueness.md` and `../../references/project_contract.md`; create `results/project_brief.md` before coding.
+2. Infer directory defaults using `../../references/smart_defaults.md`; infer a project only when the project direction explicitly says the user has no clear project goal and authorizes agent design.
+3. Plan a new, non-reused project using the user-provided direction, `../../references/project_uniqueness.md`, and `../../references/project_contract.md`; create `results/project_brief.md` before coding.
 4. Plan report density using `../../references/report_density.md`; density must come from main chapters, not appendix padding.
 5. Adapt the Word template and preserve formatting using `../../references/template_adaptation.md` and `../../references/docx_formatting.md` before writing body content.
 6. Build or update the project according to `../../references/project_contract.md`.
@@ -42,7 +42,7 @@ Before final report generation, collect or infer:
 ## Non-Negotiable Rules
 
 - Do not fabricate project success, test results, metrics, screenshots, API usage, frontend behavior, PDF export, page count, or code snippets.
-- Prefer useful inference over asking. Ask only for facts that are required, cannot be discovered, and would be risky to assume.
+- Prefer useful inference over asking, but do not invent a project direction when the field is missing. Ask for a direction, or ask whether the user authorizes the agent to design a unique project.
 - Except for purely hardware-only courses, every new project must include complete frontend and backend or equivalent software layers.
 - Older NLP examples without a frontend are historical limitations only; new NLP projects must include frontend/backend delivery.
 - If network, API access, model downloads, compilers, browser screenshots, or dependencies are unavailable, provide a runnable offline fallback when possible and record limitations honestly.

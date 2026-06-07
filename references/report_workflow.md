@@ -4,14 +4,14 @@
 
 ## Purpose
 
-Use this workflow to create a complete final course report and supporting project from a course name, a Word template, and a target environment. Project direction and target directory are optional overrides.
+Use this workflow to create a complete final course report and supporting project from a course name, project direction, a Word template, and a target environment. Project direction is a minimum required input: it may be a concrete user-defined idea, or an explicit authorization such as "no clear project goal; agent should design a unique project." Target directory is an optional override.
 
 ## Preflight
 
 Collect:
 
 - course name
-- optional project direction or course focus
+- project direction, or explicit authorization for the agent to design a unique project
 - optional target course directory
 - template `.docx`
 - conda Python path

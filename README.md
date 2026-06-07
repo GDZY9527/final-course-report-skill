@@ -26,16 +26,17 @@ Minimal prompt:
 
 ```text
 Use this skill to generate a final course report for {course_name}.
+Project direction: {project_direction}  # Or: no clear project goal; agent should design a unique project.
 Template: {template_docx}
 Conda Python: {conda_python}
-Student fields: {student_name}, {student_id}, {class}, {teacher}
+Student fields: optional; leave cover fields blank if omitted.
 ```
 
 Optional additions:
 
 ```text
-Project direction: ...
 Target course directory: ...
+Student fields: {student_name}, {student_id}, {class}, {teacher}
 ```
 
 1. Copy or clone this repository to a target machine.
@@ -43,16 +44,16 @@ Target course directory: ...
 3. For Codex, install or reference `skills/final-course-report`.
 4. Provide the minimum required inputs:
    - course name
+   - project direction, or an explicit note such as "no clear project goal; agent should design a unique project"
    - Word template path
    - conda Python path
-   - student and cover-page fields
 5. Optionally provide overrides:
-   - project direction, if you already know what project you want
    - target course directory, if the agent should not create one from the course name
-6. If the project direction is omitted, the agent should choose a deliverable project that matches the course's core concepts. If the target directory is omitted, the agent should propose or create one from the course name under the current workspace or user-approved base directory.
+   - student and cover-page fields, if you want them filled now; otherwise leave them for manual Word editing
+6. If the project direction explicitly says there is no clear project goal, the agent should design a new, non-reused, deliverable project that matches the course's core concepts. If the target directory is omitted, the agent should propose or create one from the course name under the current workspace or user-approved base directory.
 7. Let the agent create the project, run checks, generate report assets, write the report, and prepare a reviewed delivery package.
 
-When project direction or target directory is omitted, the agent should infer sensible defaults instead of stopping.
+When the target directory is omitted, the agent should infer a sensible default instead of stopping. When project direction is missing entirely, the agent should ask for it or ask whether it may design a unique project.
 
 ## Cross-Machine Installation
 
