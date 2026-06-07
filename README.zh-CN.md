@@ -66,3 +66,13 @@ Conda Python：{conda_python}
 - `{student_id}`
 
 所有 Markdown、JSON、CSV 和文本文件建议使用 UTF-8。
+
+## 质量审计
+
+生成报告后，可运行：
+
+```powershell
+python scripts/audit_generated_report.py "{course_dir}"
+```
+
+该脚本会检查 DOCX 正文密度、嵌入图片数量和 PNG 打印风险。报告过短、图片未嵌入或存在暗色图片时，应先修复再交付。

@@ -46,3 +46,17 @@ Recommended exclusions:
 - large draft docx/pdf versions
 
 Do not delete user files unless explicitly requested.
+
+## Automated Audit
+
+Run `scripts/audit_generated_report.py {course_dir}` when Python and Pillow are available. Treat failures as blockers unless the user explicitly accepts the limitation.
+
+Default hard blockers:
+
+- DOCX text density below the configured threshold.
+- DOCX embedded media below the configured threshold.
+- Dark/print-risk PNG figures.
+- Old template keywords remain in a new report.
+- Generated project figures exist but are not embedded in the report.
+
+Directory delivery is acceptable when the user did not ask for a zip. Only create a zip after showing the exclusion list.

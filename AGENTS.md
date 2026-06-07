@@ -53,3 +53,13 @@ Final responses should list:
 - verification commands and results
 - known limitations
 - delivery package contents or pending packaging confirmation
+
+## Hardening From Cross-Agent Tests
+
+- Do not deliver thin reports: plan density first and verify with `references/report_density.md`.
+- Do not reuse generic templates: write a course-specific project brief before coding.
+- Figures must be light-background, complex enough for academic reports, printable, and embedded in the DOCX.
+- Clean old template body content and remove stale course keywords.
+- Organize appendices by purpose instead of dumping unrelated fragments.
+- Maintain `results/execution_log.md` for long runs, including commands, outputs, failures, and fallbacks.
+- Run available audit scripts before delivery; fix failures or record accepted limitations honestly.

@@ -42,3 +42,14 @@ Clearly list non-Python requirements when needed:
 - model/API credentials
 
 When tools are unavailable, use a truthful local fallback if possible and record the limitation.
+
+## Required Preflight
+
+Before implementation, run or record checks for:
+
+- `{conda_python}` exists and prints its version.
+- Required project packages and document packages are available or listed in `requirements.txt`.
+- Course-specific external tools exist, such as compilers, Graphviz, browser runtime, database service, or model path.
+- If a tool is missing, choose a truthful fallback and record the limitation.
+
+For Windows details, read `platform_failures.md`.

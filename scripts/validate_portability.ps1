@@ -18,7 +18,11 @@ $required = @(
     'references/delivery_quality.md',
     'references/originality_and_sources.md',
     'references/course_patterns.md',
-    'references/portability.md'
+    'references/portability.md',
+    'references/report_density.md',
+    'references/template_adaptation.md',
+    'references/platform_failures.md',
+    'references/execution_log.md'
 )
 
 $missing = @()

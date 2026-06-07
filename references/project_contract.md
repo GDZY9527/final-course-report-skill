@@ -59,3 +59,14 @@ Examples:
 - LLM API unavailable -> offline retrieval/template answer fallback plus frontend.
 - Database server unavailable -> SQLite or file-backed fallback.
 - Compiler unavailable -> provide source, build instructions, and truthful limitation, then verify any runnable surrounding scripts.
+
+## Project Uniqueness Gate
+
+Before coding, write a project brief with:
+
+- 5-7 course-specific requirements.
+- Course-specific data schema or input/output format.
+- At least one non-generic workflow that proves the project belongs to this course.
+- Evidence files expected in `results/`.
+
+Avoid reusing generic management-system, RAG, or classifier templates unless they are redesigned around the target course concepts.

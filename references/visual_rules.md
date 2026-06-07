@@ -53,3 +53,17 @@ Most projects should produce:
 - frontend home and demo screenshots
 - project directory tree
 - future optimization roadmap
+
+## Print-Friendly Hard Rules
+
+- Use white or very light backgrounds for all report figures and screenshots.
+- Do not use dark-mode terminal, IDE, dashboard, or diagram screenshots in printable reports.
+- For generated PNG figures, average luminance should be at least 180 and dark-pixel ratio should be below 18%. Regenerate anything that fails.
+- Terminal/code screenshots should use a light theme. If a dark original is unavoidable, recreate it as a light, deterministic code/log figure.
+
+## Figure Complexity Gate
+
+- Architecture, workflow, and knowledge diagrams must contain at least 6 labeled nodes or modules, clear arrows, inputs, outputs, constraints, and evaluation points.
+- Avoid three-box diagrams unless the course task is explicitly tiny.
+- Every generated figure must be embedded in the DOCX and referenced in nearby text. Leaving figures only in `results/` is incomplete delivery.
+- Do not call a schematic, layout preview, or generated mockup a screenshot unless it came from a real rendered page.

@@ -43,3 +43,11 @@ The frontend must reflect real project behavior through one of:
 - deterministic static preview generated from real result data
 
 Document the integration path in README and `results/report_notes.md`.
+
+## Screenshot Verification Levels
+
+- Level 1: real browser screenshot from the running frontend; preferred and required for final-quality software reports when tools are available.
+- Level 2: API/service verified and deterministic light-background preview generated; label it as a preview, not a screenshot.
+- Level 3: frontend source only; record as incomplete verification and do not present it as fully delivered.
+
+All screenshots used in printable reports must be light-background and must show real project data.

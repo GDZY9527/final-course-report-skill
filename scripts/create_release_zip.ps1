@@ -24,15 +24,15 @@ if (Test-Path -LiteralPath $stage) {
 New-Item -ItemType Directory -Force -Path $stage | Out-Null
 New-Item -ItemType Directory -Force -Path $dist | Out-Null
 
-$excludeDirs = @('\.git$', '\\dist$', '\\__pycache__$', '\\node_modules$', '\\build$', '\\CMakeFiles$')
+$excludeDirNames = @('.git', 'dist', '__pycache__', 'node_modules', 'build', 'CMakeFiles')
 $excludeExt = @('.docx', '.pdf', '.zip', '.rar', '.7z', '.exe', '.obj', '.pdb', '.ilk', '.log', '.tmp')
 $excludeNames = @('.env')
 
 $files = Get-ChildItem -LiteralPath $Root -Recurse -File | Where-Object {
-    $full = $_.FullName
+    $relativeParts = $_.FullName.Substring($Root.Length).TrimStart('\') -split '\\'
     $skipDir = $false
-    foreach ($pattern in $excludeDirs) {
-        if ($full -match $pattern -or $full -match ($pattern + '\\')) {
+    foreach ($part in $relativeParts) {
+        if ($excludeDirNames -contains $part) {
             $skipDir = $true
             break
         }

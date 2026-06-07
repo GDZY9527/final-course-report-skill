@@ -66,3 +66,13 @@ Use placeholders instead of hard-coded local paths:
 - `{student_id}`
 
 All Markdown, JSON, CSV, and text files should use UTF-8.
+
+## Quality Audit
+
+After generating a report, run:
+
+```powershell
+python scripts/audit_generated_report.py "{course_dir}"
+```
+
+The script checks DOCX text density, embedded media count, and PNG print risk. Fix short reports, missing embedded images, and dark figures before delivery.
