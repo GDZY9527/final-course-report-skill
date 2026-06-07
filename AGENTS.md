@@ -63,3 +63,12 @@ Final responses should list:
 - Organize appendices by purpose instead of dumping unrelated fragments.
 - Maintain `results/execution_log.md` for long runs, including commands, outputs, failures, and fallbacks.
 - Run available audit scripts before delivery; fix failures or record accepted limitations honestly.
+
+## Hard Rules After 2.0 Regression Tests
+
+- Every report must use a new project; do not reuse examples, prior test projects, or old same-course projects.
+- Before coding, create `results/project_brief.md` with three candidate projects and anti-reuse reasoning.
+- Before frontend coding, create `results/frontend_design_brief.md`; the final UI must reflect the project workflow and must not be the same blue dashboard every time.
+- If student name, ID, class, or teacher are missing, do not ask at the start; leave cover fields for the user to fill in Word.
+- The Word body must inherit template fonts, sizes, colors, and heading styles. Arbitrary colored headings or mixed body sizes are blockers.
+- By default create only the appendix heading and leave appendix body empty; report density must not come from appendix padding.

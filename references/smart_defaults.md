@@ -70,3 +70,7 @@ When using inferred defaults, state them clearly before or while executing:
 - frontend/backend stack
 - fallback plan
 - expected result files
+
+## Do Not Reuse Default Projects
+
+When choosing a project direction automatically, read `project_uniqueness.md` first. Historical examples and prior test projects are banned by default. Do not choose the same practice project just because the course name is the same.

@@ -22,7 +22,11 @@ $required = @(
     'references/report_density.md',
     'references/template_adaptation.md',
     'references/platform_failures.md',
-    'references/execution_log.md'
+    'references/execution_log.md',
+    'references/project_uniqueness.md',
+    'references/frontend_design.md',
+    'references/docx_formatting.md',
+    'references/appendix_policy.md'
 )
 
 $missing = @()

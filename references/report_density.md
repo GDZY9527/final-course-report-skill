@@ -30,3 +30,14 @@ Before final delivery, search the report for old course names, old project names
 ## Missing Student Fields
 
 If the user asks for a formal submission-ready version, collect missing cover fields first. If the user allows placeholders, use visible placeholders such as `未提供` and record them in the final limitations.
+
+## Body Density Planning
+
+Plan target length by chapter before writing. Do not rely on appendix padding after generation:
+
+- Chapters 1 and 2 cover theory and methods.
+- Chapter 3 project practice must be the longest chapter, target 35%-45% of main-body text.
+- Chapter 4 should be concise but concrete.
+- The appendix is empty by default and should not be the main density source.
+
+If the first draft is too short, expand Chapter 3 with design tradeoffs, real result interpretation, error analysis, testing discussion, and limitations instead of expanding appendices.
