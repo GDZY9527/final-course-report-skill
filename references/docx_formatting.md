@@ -2,52 +2,42 @@
 
 [English](docx_formatting.md) | [中文](docx_formatting.zh-CN.md)
 
-## Preserve Template Formatting
+## Highest Formatting Authority
 
-When a Word template is provided, the generated report must follow the template formatting. Do not invent colorful heading styles, arbitrary fonts, or unrelated body sizes.
+All Word report formatting must follow `references/chengdu_neusoft_report_standard.zh-CN.md` as the highest-priority authority. It is derived from the user-provided `成都东软学院定制班课程报告撰写规范.docx`.
 
-Before writing, extract:
+Previous skill rules about inheriting template fonts, font sizes, heading colors, line spacing, captions, or code formatting are replaced by that writing standard.
 
-- body font, size, line spacing, first-line indent
-- chapter heading style, font, size, color, spacing
-- section heading style, font, size, color, spacing
-- table style and caption style
-- cover table and review form boundaries
+## Template Boundary
 
-Use those values for all generated body chapters.
+The Word template is still used for:
 
-## Cover Fields
+- cover structure and cover field positions
+- table-of-contents region
+- header/footer placement
+- review or grading forms
+- fixed school-required tables or pages
 
-Do not force the user to provide student name, ID, class, or teacher at the beginning. If the user provides them, fill them. If not, leave the cover fields blank or keep the template placeholders for the user to fill manually in Word.
+If template fonts, sizes, heading colors, line spacing, captions, or code formatting conflict with `chengdu_neusoft_report_standard.zh-CN.md`, correct them to the writing standard.
 
-Do not invent names, IDs, class names, departments, or teacher names.
+## Required Gates
 
-## Body Scope
+Before writing DOCX:
 
-The agent writes only the main report body before appendices:
+1. Read `chengdu_neusoft_report_standard.zh-CN.md`.
+2. Configure page setup, margins, headers/footers, headings, body text, TOC, figure captions, table captions, formulas, and code styles from that standard.
+3. Remove old template body text, stale TOC entries, old headings, old captions, and old sample data.
 
-- chapter 1 theory
-- chapter 2 methods/technology
-- chapter 3 project practice
-- chapter 4 summary/reflection
-- references if required
+After writing DOCX, check:
 
-The appendix content should not be authored by the skill unless the user explicitly asks.
+- A4 page size and 25mm margins on all sides.
+- Header text is `成都东软学院定制班课程报告`.
+- Chinese body text uses SimSun `小四`; English and numbers use Times New Roman `小四`.
+- Body text has first-line indent of 2 Chinese characters and 1.5 line spacing.
+- Chapter/section/subsection/item headings follow the standard heading table.
+- Figure captions are below figures; table captions are above tables; both use SimSun `五号`.
+- Code uses Times New Roman `五号` / SimSun `五号`, 1.25 multiple line spacing, and no bold.
+- TOC matches actual headings and has no stale template entries.
+- Appendix keeps only the heading by default and leaves body empty.
 
-## Table Of Contents
-
-If the template contains an old TOC, remove or rebuild it so old entries do not remain. If automatic Word fields cannot be refreshed, create a simple static TOC that matches the actual headings, and tell the user to refresh fields in Word if needed.
-
-## Strict Cleanup
-
-After generation, inspect DOCX text for:
-
-- old TOC entries
-- old chapter headings
-- old project names
-- old sample data tables
-- stale figure/table captions
-- mixed heading colors or arbitrary custom colors
-- body font or size inconsistent with the template
-
-Any residue is a blocker.
+Any obvious violation of the writing standard is a delivery blocker.

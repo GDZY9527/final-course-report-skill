@@ -26,6 +26,8 @@ $required = @(
     'references/project_uniqueness.md',
     'references/frontend_design.md',
     'references/docx_formatting.md',
+    'references/chengdu_neusoft_report_standard.md',
+    'references/chengdu_neusoft_report_standard.zh-CN.md',
     'references/appendix_policy.md'
 )
 
