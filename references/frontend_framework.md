@@ -25,6 +25,9 @@ The frontend must not be only a title, cards, form, and table. It must include:
 - at least 3 real business pages or equivalent views
 - loading, empty, success, failure, validation, and backend-error states
 - real data-driven charts, tables, detail panels, and operation feedback
+- at least one project-specific visual analysis surface, such as a heatmap, timeline, comparison board, graph view, pipeline trace, or interactive metrics panel
+- frontend pages that use the project's domain vocabulary, workflows, and result objects instead of generic "dashboard/card/form" wording
+- real browser screenshots for the main page, one operation page after successful input, and one metrics/result page
 - responsive layout checked on desktop and mobile
 - accessibility: labels, semantic buttons, focus states, and contrast
 - visual design tied to the project domain
@@ -34,6 +37,7 @@ The frontend must not be only a title, cards, form, and table. It must include:
 - single-file Flask + Jinja + rough CSS as the complete frontend/backend
 - same blue dashboard/card grid for all courses
 - sparse demo pages with large blank areas and very few workflows
+- frontend design briefs that promise a feature but do not implement it in templates/CSS/JS
 - unhandled JavaScript errors
 - mojibake/garbled UI text
 - claiming real screenshots when screenshots were not taken from a real browser run
@@ -48,5 +52,6 @@ Before delivery, record:
 - real browser screenshot paths
 - browser console errors
 - mobile viewport check
+- where each screenshot is used in the report or why it is excluded
 
 If browser screenshots cannot run, record the limitation honestly.

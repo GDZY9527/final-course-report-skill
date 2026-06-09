@@ -35,6 +35,17 @@ Blockers:
 - TOC contains old course names, old project names, BERT, stale headings, or template remnants.
 - Word navigation pane does not recognize headings.
 - TOC and actual headings disagree.
+- The generated DOCX has the same TOC text as the template DOCX.
+- The final DOCX keeps old TOC fields without clearing their paragraph text.
+- Multiple report DOCX files are left in the delivery root without clearly marking exactly one final version.
+
+When editing a template, treat the TOC as a volatile section:
+
+- Record all template TOC paragraphs before writing.
+- Delete or replace the template TOC paragraphs.
+- After writing body headings, regenerate the TOC entries from the actual headings.
+- Run an audit comparing template TOC text and final TOC text; any exact match means the report is not finished.
+- Do not rely on "Word will update fields later" as the only solution. The visible document delivered to the user must not show stale template entries.
 
 ## Heading Spacing
 
@@ -69,3 +80,4 @@ Before delivery, verify that:
 - Heading spacing follows the writing standard.
 - Body font, size, line spacing, and indentation follow the writing standard.
 - Appendix has only the heading by default.
+- Only one final report DOCX is present in the delivery root, or older draft DOCX files are moved to a clearly named draft folder that is excluded from final packaging.

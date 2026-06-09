@@ -60,7 +60,10 @@ python scripts/audit_generated_report.py {course_dir} `
   --require-project-brief `
   --require-frontend-brief `
   --require-heading-styles `
+  --require-fresh-toc `
+  --require-single-final-docx `
   --require-django-frontend `
+  --require-frontend-screenshots `
   --forbid-placeholders
 ```
 
@@ -73,10 +76,13 @@ python scripts/audit_generated_report.py {course_dir} `
 - 项目图片已经生成但没有嵌入报告。
 - 章节标题只是 `正文/Normal` 段落改字体，而不是 Word 真实标题样式。
 - 目录仍包含模板内容或旧章节名称。
+- 交付根目录中存在多个最终报告 DOCX。
 - 附录正文包含生成填充内容；默认只保留附录标题。
+- 英文术语括号解释过多，导致正文看起来像 AI 生成。
 - 生成的 Markdown、Python、HTML、JSON 或日志文件存在乱码、编码损坏或未处理占位符。
 - Python Web 项目在要求 Django 时仍使用 Flask 单文件/Jinja demo 结构。
+- 真实前端/浏览器截图少于 3 张。
 - 运行日志中残留 `To be filled`、`TODO` 等未执行占位符。
-- Word 临时文件 `~$*.docx`、`__pycache__/`、`.pyc` 等缓存文件进入交付包。
+- Word 临时文件 `~$*.docx`、`__pycache__/`、`.pyc` 或误生成的零字节杂项文件进入交付包。
 
 用户未要求压缩包时，可以交付目录形式。只有在展示排除清单后才创建 zip。

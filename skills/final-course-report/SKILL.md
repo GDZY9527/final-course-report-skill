@@ -56,8 +56,10 @@ Before final report generation, collect or infer:
 - Do not author appendix body content by default; create only the appendix heading unless the user explicitly asks.
 - Follow `course_report_writing_standard.zh-CN.md` for all Word fonts, sizes, colors, headings, margins, headers/footers, captions, formulas, and code blocks. Arbitrary colorful headings or mismatched body text are blockers.
 - DOCX headings must use real Word heading paragraph styles. Normal/body-style paragraphs that only look like headings are blockers. TOC must be rebuilt from new headings, not inherited from the template.
-- Remove prompt-like bracket notes, excessive parenthetical English glosses, placeholders, and machine-like drafting traces from the final report body.
+- Remove prompt-like bracket notes, excessive parenthetical English glosses, bilingual terminology piles such as repeated `Hidden Markov Model, HMM` / `Conditional Random Fields, CRF`, placeholders, and machine-like drafting traces from the final report body.
 - For Python web projects, use Django by default for the full frontend/backend unless the user explicitly requests another stack. Flask single-file/Jinja demos are not acceptable as complete deliverables.
+- Record at least three real frontend/browser screenshots for software projects: main page, successful operation page, and metrics/result page. Use them in the report or explain exclusion.
+- Deliver exactly one final report DOCX in the delivery root. Move drafts elsewhere and exclude cache, `~$*.docx`, `.pyc`, and accidental junk files.
 - Generated Markdown, HTML, Python source, JSON, and logs must be UTF-8 and must not contain mojibake/garbled text.
 
 ## Reference Selection
