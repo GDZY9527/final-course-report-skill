@@ -51,6 +51,17 @@ Do not delete user files unless explicitly requested.
 
 Run `scripts/audit_generated_report.py {course_dir}` when Python and Pillow are available. Treat failures as blockers unless the user explicitly accepts the limitation.
 
+Recommended strict command:
+
+```powershell
+python scripts/audit_generated_report.py {course_dir} `
+  --require-project-brief `
+  --require-frontend-brief `
+  --require-heading-styles `
+  --require-django-frontend `
+  --forbid-placeholders
+```
+
 Default hard blockers:
 
 - DOCX text density below the configured threshold.
@@ -58,5 +69,12 @@ Default hard blockers:
 - Dark/print-risk PNG figures.
 - Old template keywords remain in a new report.
 - Generated project figures exist but are not embedded in the report.
+- Chapter/section headings are only formatted text in `Normal` style instead of real Word heading styles.
+- The generated table of contents still contains template content or stale chapter names.
+- Appendix body contains generated filler; by default only the appendix title should remain.
+- Generated Markdown/Python/HTML/JSON/log files contain mojibake, encoding damage, or unresolved placeholders.
+- Python web projects use Flask/single-file Jinja demo structure when Django was required.
+- Runtime logs contain `To be filled`, `TODO`, or other non-executed placeholders.
+- Temporary Word/cache files such as `~$*.docx`, `__pycache__/`, or `.pyc` enter the delivery package.
 
 Directory delivery is acceptable when the user did not ask for a zip. Only create a zip after showing the exclusion list.

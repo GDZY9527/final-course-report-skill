@@ -71,4 +71,8 @@ Final responses should list:
 - Before frontend coding, create `results/frontend_design_brief.md`; the final UI must reflect the project workflow and must not be the same blue dashboard every time.
 - If student name, ID, class, or teacher are missing, do not ask at the start; leave cover fields for the user to fill in Word.
 - The Word report must follow `references/course_report_writing_standard.zh-CN.md` for fonts, sizes, colors, margins, headers/footers, headings, captions, formulas, and code blocks. Template styles are secondary to this standard.
+- DOCX headings must use real Word heading styles and the TOC must be rebuilt from the new headings. Normal/body paragraphs that merely look like headings are blockers.
+- Remove prompt-like bracket notes, excessive parenthetical English glosses, placeholders, and machine-like drafting traces from the report body.
+- For Python web projects, default to Django for complete frontend/backend delivery unless the user explicitly requests another stack. Single-file Flask/Jinja demos are not sufficient.
+- Generated Markdown, HTML, Python source, JSON, and logs must be UTF-8 and must not contain mojibake/garbled text.
 - By default create only the appendix heading and leave appendix body empty; report density must not come from appendix padding.

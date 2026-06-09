@@ -39,6 +39,10 @@ The frontend should look like a polished course project, not a rushed demo:
 
 Use restrained but project-specific colors. Avoid one-size-fits-all blue dashboards.
 
+## Framework Gate
+
+For Python web projects, also read `frontend_framework.md`. Default to Django unless the user explicitly requests another stack. A single-file Flask/Jinja page is not enough for a complete deliverable.
+
 ## Verification
 
 Record frontend evidence in `results/report_notes.md`:

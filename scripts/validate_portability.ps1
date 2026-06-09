@@ -26,6 +26,12 @@ $required = @(
     'references/project_uniqueness.md',
     'references/frontend_design.md',
     'references/docx_formatting.md',
+    'references/docx_generation_quality.md',
+    'references/docx_generation_quality.zh-CN.md',
+    'references/prose_quality.md',
+    'references/prose_quality.zh-CN.md',
+    'references/frontend_framework.md',
+    'references/frontend_framework.zh-CN.md',
     'references/course_report_writing_standard.md',
     'references/course_report_writing_standard.zh-CN.md',
     'references/appendix_policy.md'

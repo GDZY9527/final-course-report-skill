@@ -29,13 +29,13 @@ Before final report generation, collect or infer:
 2. Infer directory defaults using `../../references/smart_defaults.md`; infer a project only when the project direction explicitly says the user has no clear project goal and authorizes agent design.
 3. Plan a new, non-reused project using the user-provided direction, `../../references/project_uniqueness.md`, and `../../references/project_contract.md`; create `results/project_brief.md` before coding.
 4. Plan report density using `../../references/report_density.md`; density must come from main chapters, not appendix padding.
-5. Adapt the Word template structure using `../../references/template_adaptation.md`, then apply the dedicated school writing standard from `../../references/course_report_writing_standard.zh-CN.md` and `../../references/docx_formatting.md` before writing body content.
+5. Adapt the Word template structure using `../../references/template_adaptation.md`, then apply `../../references/course_report_writing_standard.zh-CN.md`, `../../references/docx_formatting.md`, and `../../references/docx_generation_quality.md` before writing body content.
 6. Build or update the project according to `../../references/project_contract.md`.
-7. For software and software-hardware projects, design a project-specific frontend using `../../references/frontend_quality.md` and `../../references/frontend_design.md`.
+7. For software and software-hardware projects, design a project-specific frontend using `../../references/frontend_quality.md`, `../../references/frontend_design.md`, and `../../references/frontend_framework.md`.
 8. Handle conda, platform, and dependency rules from `../../references/environment.md` and `../../references/platform_failures.md`.
 9. Maintain an execution log using `../../references/execution_log.md`.
 10. Generate and embed academic-style, print-friendly deterministic figures using `../../references/visual_rules.md`.
-11. Write only the main report body and references using `../../references/report_workflow.md`, `../../references/originality_and_sources.md`, and `../../references/appendix_policy.md`; leave appendix body empty unless the user asks otherwise.
+11. Write only the main report body and references using `../../references/report_workflow.md`, `../../references/originality_and_sources.md`, `../../references/prose_quality.md`, and `../../references/appendix_policy.md`; leave appendix body empty unless the user asks otherwise.
 12. Apply strict delivery gates, run available audits, and package only after confirmation using `../../references/delivery_quality.md`.
 13. If moving between machines or agents, follow `../../references/portability.md`.
 
@@ -55,14 +55,18 @@ Before final report generation, collect or infer:
 - Do not reuse example or prior-test projects. Every report needs a new project and a `results/project_brief.md` uniqueness record.
 - Do not author appendix body content by default; create only the appendix heading unless the user explicitly asks.
 - Follow `course_report_writing_standard.zh-CN.md` for all Word fonts, sizes, colors, headings, margins, headers/footers, captions, formulas, and code blocks. Arbitrary colorful headings or mismatched body text are blockers.
+- DOCX headings must use real Word heading paragraph styles. Normal/body-style paragraphs that only look like headings are blockers. TOC must be rebuilt from new headings, not inherited from the template.
+- Remove prompt-like bracket notes, excessive parenthetical English glosses, placeholders, and machine-like drafting traces from the final report body.
+- For Python web projects, use Django by default for the full frontend/backend unless the user explicitly requests another stack. Flask single-file/Jinja demos are not acceptable as complete deliverables.
+- Generated Markdown, HTML, Python source, JSON, and logs must be UTF-8 and must not contain mojibake/garbled text.
 
 ## Reference Selection
 
 Required by phase:
 
-- Start: `smart_defaults.md`, `project_uniqueness.md`, `project_contract.md`, `report_density.md`, `template_adaptation.md`, `course_report_writing_standard.zh-CN.md`, `docx_formatting.md`, and `appendix_policy.md`.
+- Start: `smart_defaults.md`, `project_uniqueness.md`, `project_contract.md`, `report_density.md`, `template_adaptation.md`, `course_report_writing_standard.zh-CN.md`, `docx_formatting.md`, `docx_generation_quality.md`, `prose_quality.md`, and `appendix_policy.md`.
 - Environment and tools: `environment.md` and `platform_failures.md`.
-- Frontend: `frontend_quality.md` and `frontend_design.md` for every non-pure-hardware project.
+- Frontend: `frontend_quality.md`, `frontend_design.md`, and `frontend_framework.md` for every non-pure-hardware project.
 - Figures: `visual_rules.md` before generating or inserting any figure.
 - Writing: `report_workflow.md` and `originality_and_sources.md`.
 - Logging: `execution_log.md` throughout long tasks.
