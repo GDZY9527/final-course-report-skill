@@ -1,8 +1,8 @@
-# Chengdu Neusoft Customized-Class Course Report Writing Standard
+# Course Report Writing Standard
 
-[English](chengdu_neusoft_report_standard.md) | [中文](chengdu_neusoft_report_standard.zh-CN.md)
+[English](course_report_writing_standard.md) | [中文](course_report_writing_standard.zh-CN.md)
 
-This file is the English companion to `chengdu_neusoft_report_standard.zh-CN.md`, which was transcribed from the user-provided `成都东软学院定制班课程报告撰写规范.docx`. For exact Chinese typography terms such as `小二`, `小三`, `四号`, `小四`, `五号`, `小五`, `宋体`, and `黑体`, the Chinese file is authoritative.
+This file is the English companion to `course_report_writing_standard.zh-CN.md`, which was transcribed from the user-provided `课程报告撰写规范.docx`. For exact Chinese typography terms such as `小二`, `小三`, `四号`, `小四`, `五号`, `小五`, `宋体`, and `黑体`, the Chinese file is authoritative.
 
 ## Priority
 
@@ -58,7 +58,7 @@ The conclusion should be accurate, complete, clear, and concise. It may include 
 Headers and footers start from the abstract page:
 
 - Header font: SimSun, Chinese `五号`, centered.
-- Header text: `成都东软学院定制班课程报告`.
+- Header text: `{report_header_text}`. Default to `课程报告` unless the user or template provides a required school header.
 - Abstract and TOC page numbers: uppercase Roman numerals, SimSun `小五`, centered footer.
 
 Chinese abstract:
@@ -109,7 +109,7 @@ Body text:
 - Numbers and English: Times New Roman `小四`.
 - First-line indent: 2 Chinese characters.
 - Line spacing: 1.5.
-- Main-body header: single line, centered `成都东软学院定制班课程报告`, SimSun `五号`.
+- Main-body header: single line, centered `{report_header_text}`, SimSun `五号`. Default to `课程报告` unless the user or template provides a required school header.
 - Main-body page numbers: restart from body, Arabic numerals, Times New Roman `小五`, centered footer.
 
 Figures:

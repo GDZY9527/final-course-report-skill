@@ -4,7 +4,7 @@
 
 ## 模板角色
 
-Word 模板用于提供结构，不再作为字体字号等格式的最高依据。报告格式必须优先遵守 `chengdu_neusoft_report_standard.zh-CN.md`。
+Word 模板用于提供结构，不再作为字体字号等格式的最高依据。报告格式必须优先遵守 `course_report_writing_standard.zh-CN.md`。
 
 模板可保留：
 
@@ -42,7 +42,7 @@ Word 模板用于提供结构，不再作为字体字号等格式的最高依据
 
 1. 读取模板并识别结构。
 2. 删除旧正文和旧目录条目。
-3. 读取 `chengdu_neusoft_report_standard.zh-CN.md`。
+3. 读取 `course_report_writing_standard.zh-CN.md`。
 4. 按学校撰写规范设置页面、页边距、页眉页脚、目录、标题、正文、图题、表题、公式和代码样式。
 5. 写入新报告内容。
 6. 渲染或打开检查，确认模板旧内容没有残留，格式没有被模板旧样式污染。
@@ -56,6 +56,6 @@ Word 模板用于提供结构，不再作为字体字号等格式的最高依据
 - 旧图题、表题不存在。
 - 封面字段匹配当前输入或保留空白/占位。
 - 目录和标题结构属于新报告。
-- 字体、字号、标题、页边距、页眉页脚、图题表题、公式和代码格式符合 `chengdu_neusoft_report_standard.zh-CN.md`。
+- 字体、字号、标题、页边距、页眉页脚、图题表题、公式和代码格式符合 `course_report_writing_standard.zh-CN.md`。
 
 若无法自动更新 Word 域，在最终说明中提醒用户用 Word 刷新目录。

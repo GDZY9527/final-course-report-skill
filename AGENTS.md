@@ -70,5 +70,5 @@ Final responses should list:
 - Before coding, create `results/project_brief.md` with three candidate projects and anti-reuse reasoning.
 - Before frontend coding, create `results/frontend_design_brief.md`; the final UI must reflect the project workflow and must not be the same blue dashboard every time.
 - If student name, ID, class, or teacher are missing, do not ask at the start; leave cover fields for the user to fill in Word.
-- The Word report must follow `references/chengdu_neusoft_report_standard.zh-CN.md` for fonts, sizes, colors, margins, headers/footers, headings, captions, formulas, and code blocks. Template styles are secondary to this standard.
+- The Word report must follow `references/course_report_writing_standard.zh-CN.md` for fonts, sizes, colors, margins, headers/footers, headings, captions, formulas, and code blocks. Template styles are secondary to this standard.
 - By default create only the appendix heading and leave appendix body empty; report density must not come from appendix padding.

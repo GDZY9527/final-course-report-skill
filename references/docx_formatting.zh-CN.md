@@ -4,7 +4,7 @@
 
 ## 最高格式依据
 
-所有 Word 报告格式必须以 `references/chengdu_neusoft_report_standard.zh-CN.md` 为最高优先级依据。该规范已经写入 skill，来自用户提供的《成都东软学院定制班课程报告撰写规范.docx》。
+所有 Word 报告格式必须以 `references/course_report_writing_standard.zh-CN.md` 为最高优先级依据。该规范已经写入 skill，来自用户提供的《课程报告撰写规范.docx》。
 
 之前 skill 中关于“继承模板字体、字号、标题颜色、行距、图题表题、代码块格式”的规则，全部由该撰写规范替代。
 
@@ -18,20 +18,20 @@
 - 评阅表或教师评分表
 - 学校要求的固定表格或固定页面
 
-但如果模板中的字体、字号、标题颜色、行距、图题、表题、代码格式与 `chengdu_neusoft_report_standard.zh-CN.md` 冲突，必须修正为撰写规范要求。
+但如果模板中的字体、字号、标题颜色、行距、图题、表题、代码格式与 `course_report_writing_standard.zh-CN.md` 冲突，必须修正为撰写规范要求。
 
 ## 必须执行
 
 写入 DOCX 前：
 
-1. 读取 `chengdu_neusoft_report_standard.zh-CN.md`。
+1. 读取 `course_report_writing_standard.zh-CN.md`。
 2. 根据该规范设置页面、页边距、页眉页脚、标题、正文、目录、图题、表题、公式和代码样式。
 3. 删除旧模板正文、旧目录条目、旧章节标题、旧图题、旧表题和旧样例数据。
 
 写入 DOCX 后检查：
 
 - A4、上下左右 25mm 页边距是否正确。
-- 页眉是否为“成都东软学院定制班课程报告”。
+- 页眉是否为 `{report_header_text}`，默认可用“课程报告”，如用户或模板提供学校固定页眉则以用户提供内容为准。
 - 正文中文是否为小四号宋体，英文和数字是否为小四号 Times New Roman。
 - 正文是否首行缩进 2 个中文字符、1.5 倍行距。
 - 章、节、条、项标题是否符合撰写规范表格中的字体、字号、对齐和段前段后要求。

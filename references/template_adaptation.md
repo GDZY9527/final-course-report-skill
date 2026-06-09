@@ -4,7 +4,7 @@
 
 ## Template Role
 
-The Word template provides structure, not the highest authority for fonts, sizes, and styling. Report formatting must follow `chengdu_neusoft_report_standard.zh-CN.md` first.
+The Word template provides structure, not the highest authority for fonts, sizes, and styling. Report formatting must follow `course_report_writing_standard.zh-CN.md` first.
 
 Keep useful template structure such as:
 
@@ -42,7 +42,7 @@ Prefer structural position and heading level over exact string matching. Use fuz
 
 1. Read the template and identify structure.
 2. Remove old body content and stale TOC entries.
-3. Read `chengdu_neusoft_report_standard.zh-CN.md`.
+3. Read `course_report_writing_standard.zh-CN.md`.
 4. Apply the school writing standard to page setup, margins, headers/footers, TOC, headings, body text, captions, formulas, and code blocks.
 5. Write the new report content.
 6. Render or open-check the result to confirm no old template content remains and no old template styling polluted the report.
@@ -56,6 +56,6 @@ After generation, check that:
 - old captions do not exist
 - cover fields match current input or approved blank placeholders
 - TOC and heading structure belong to the new report
-- fonts, sizes, headings, margins, headers/footers, captions, formulas, and code blocks follow `chengdu_neusoft_report_standard.zh-CN.md`
+- fonts, sizes, headings, margins, headers/footers, captions, formulas, and code blocks follow `course_report_writing_standard.zh-CN.md`
 
 If Word fields cannot be updated automatically, state that the user should refresh the table of contents in Word.

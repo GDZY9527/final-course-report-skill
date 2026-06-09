@@ -4,7 +4,7 @@
 
 ## Highest Formatting Authority
 
-All Word report formatting must follow `references/chengdu_neusoft_report_standard.zh-CN.md` as the highest-priority authority. It is derived from the user-provided `成都东软学院定制班课程报告撰写规范.docx`.
+All Word report formatting must follow `references/course_report_writing_standard.zh-CN.md` as the highest-priority authority. It is derived from the user-provided `课程报告撰写规范.docx`.
 
 Previous skill rules about inheriting template fonts, font sizes, heading colors, line spacing, captions, or code formatting are replaced by that writing standard.
 
@@ -18,20 +18,20 @@ The Word template is still used for:
 - review or grading forms
 - fixed school-required tables or pages
 
-If template fonts, sizes, heading colors, line spacing, captions, or code formatting conflict with `chengdu_neusoft_report_standard.zh-CN.md`, correct them to the writing standard.
+If template fonts, sizes, heading colors, line spacing, captions, or code formatting conflict with `course_report_writing_standard.zh-CN.md`, correct them to the writing standard.
 
 ## Required Gates
 
 Before writing DOCX:
 
-1. Read `chengdu_neusoft_report_standard.zh-CN.md`.
+1. Read `course_report_writing_standard.zh-CN.md`.
 2. Configure page setup, margins, headers/footers, headings, body text, TOC, figure captions, table captions, formulas, and code styles from that standard.
 3. Remove old template body text, stale TOC entries, old headings, old captions, and old sample data.
 
 After writing DOCX, check:
 
 - A4 page size and 25mm margins on all sides.
-- Header text is `成都东软学院定制班课程报告`.
+- Header text is `{report_header_text}`. Default to `课程报告` unless the user or template provides a required school header.
 - Chinese body text uses SimSun `小四`; English and numbers use Times New Roman `小四`.
 - Body text has first-line indent of 2 Chinese characters and 1.5 line spacing.
 - Chapter/section/subsection/item headings follow the standard heading table.
