@@ -4,6 +4,14 @@
 
 Portable instructions for generating complete final course reports and deliverable course projects with mainstream coding agents.
 
+## License
+
+This repository uses a custom **Non-Commercial License**. You may use, copy, modify, and share it for personal, educational, research, and other non-commercial purposes.
+
+Commercial sale, paid redistribution, resale, paid report-generation services, paid training products, commercial agent packs, SaaS offerings, and other profit-oriented uses are not permitted without prior written permission from the copyright holder.
+
+All copies or substantial portions must retain the copyright notice, license text, and attribution to the original author/repository.
+
 ## What this repository provides
 
 - A Codex skill at `skills/final-course-report/SKILL.md`.
